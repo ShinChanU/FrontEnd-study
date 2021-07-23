@@ -24,9 +24,9 @@
         </div>
         <div class="Top__sections">
             <ul class="sectionList">
-                <li class="secIntro">Intro</li>
-                <li class="section1">Section1</li>
-                <li class="section2">Section2</li>
+                <li class="secIntro"><span>Intro</span></li>
+                <li class="section1"><span>Section1</span></li>
+                <li class="section2"><span>Section2</span></li>
             </ul>
         </div>
     </nav>
@@ -66,17 +66,17 @@
                 <div class="github_image" data-aos="zoom-in" data-aos-duration="800">
                     <div class="mySlides fade">
                         <img src="./image/chanu_commit.png">
-                        <!-- <div class="text">Caption Text</div> -->
+
                     </div>
 
                     <div class="mySlides fade">
                         <img src="./image/sejun_commit.png">
-                        <!-- <div class="text">Caption Two</div> -->
+
                     </div>
 
                     <div class="mySlides fade">
                         <img src="./image/hyerin_commit.png">
-                        <!-- <div class="text">Caption Three</div> -->
+
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -85,39 +85,22 @@
 
                 </div>
 
-                <!-- The dots/circles <div style="text-align:center"> <span class="dot"
-                    onclick="currentSlide(1)"></span> <span class="dot"
-                    onclick="currentSlide(2)"></span> <span class="dot"
-                    onclick="currentSlide(3)"></span> </div> -->
-
-
-
-                <h3>clonecoding</h3>
-
-                <div class="clonecoding" id="clonecoding">
-
+                <h3 data-aos="fade-up" data-aos-duration="600">clonecoding</h3>
+                <div class="clonecoding" id="clonecoding" data-aos="zoom-in" data-aos-duration="800">
                     <div class="nomad">
-                        <div class="flip-box">
-                            <div class="flip">
-
-                                <div class="FP"><img src="./image/nomadCoders.PNG" alt="nomad"></div>
-                                <div class="clone_result">
-                                    <img src="./image/nomad.gif" alt="paingjs" loop="infinite">
-                                </div>
-                            </div>
+                        <div class="FP">
+                            <img class="picture" src="./image/nomadCoders.PNG" alt="nomad">
+                        </div>
+                        <div class="clone_result">
+                            <img src="./image/nomad.gif" alt="paingjs" loop="infinite">
                         </div>
                     </div>
-
                     <div class="elie">
-                        <div class="flip-box">
-                            <div class="flip">
-                                <div class="FP">
-                                    <img src="./image/dreamcoding_elie.png" alt="elie">
-                                </div>
-                                <div class="clone_result">
-                                    <img src="./image/shopping.gif" alt="shopping" loop="infinite">
-                                </div>
-                            </div>
+                        <div class="FP">
+                            <img class="picture" src="./image/dreamcoding_elie.png" alt="elie">
+                        </div>
+                        <div class="clone_result">
+                            <img src="./image/shopping.gif" alt="shopping" loop="infinite">
                         </div>
                     </div>
                 </div>
@@ -143,63 +126,81 @@
                         </ul>
                     </div>
                     <!-- 채팅 내용 시작 -->
-                    <div class="chatting" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="chatting" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic"
+                        data-aos-once="true">
                         <!-- 채팅 날짜 -->
-                        <div class="chatDate">
-                        </div>
+                        <div class="chatDate"></div>
+
                         <!-- 신찬우 채팅 내용 -->
-                        <div class="project_list" id="project_Shin" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="1400">
+                        <div class="project_list" id="project_Shin">
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <img class="avatar_image" src="image/image_people.jpeg">
                                 <div class="chat_qu_col">
                                     <span class="chat__name">궁금한게 많은 행인</span>
                                     <div class="chat__main">너는 어떤 프로젝트를 했니?</div>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
-                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="1600">
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <div class="chat_an_col">
                                     <span class="chat__main">글쎄 ?</span>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
-                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="1800">
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <div class="chat_an_col">
                                     <span class="chat__main">아직 안 했어 !<br><br><br><br><br><br><br><br></span>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
                         </div>
 
                         <!-- 이세준 채팅 내용 -->
-                        <div class="project_list hidden" id="project_Lee" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="1400">
+                        <div class="project_list" id="project_Lee" style="display: none;">
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <img class="avatar_image" src="image/image_people.jpeg">
                                 <div class="chat_qu_col">
                                     <span class="chat__name">궁금한게 많은 행인</span>
                                     <div class="chat__main">너는 어떤 프로젝트를 했니?</div>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
-                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="1600">
+
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <div class="chat_an_col">
                                     <span class="chat__main">잠시만 !</span>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
-                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="1800">
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <div class="chat_an_col">
                                     <span class="chat__main">나도 아직 안했어
                                         !<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
                         </div>
 
                         <!-- 최혜린 채팅 내용 -->
-                        <div class="project_list hidden" id="project_Choi" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="1400">
+                        <div class="project_list" id="project_Choi" style="display: none;">
+
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <img class="avatar_image" src="image/image_people.jpeg">
                                 <div class="chat_qu_col">
                                     <span class="chat__name">궁금한게 많은 행인</span>
                                     <div class="chat__main">너는 어떤 프로젝트를 했니?</div>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
-                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="1600">
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
                                 <div class="chat_an_col">
                                     <span class="chat__main">
                                         <p>나의 개인 프로젝트는 이거야!</p>
@@ -207,15 +208,18 @@
                                             <img src="image/choi_project.png" alt="choi_projectimage"
                                                 class="chat_project" />
                                         </a>
-                                        <p>혜린/인덕대학교</p>
+
                                     </span>
                                 </div>
+                                <span class="chat__clock"></span>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
         </div>
+    </div>
     </div>
 
     <footer class="footer">

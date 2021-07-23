@@ -1,0 +1,192 @@
+:root {
+  --top-margin: 80px;
+  --top-color: rgb(222, 228, 250);
+  --chat-height: 50px;
+  --color-skyblue: rgb(178, 199, 217);
+  --color-yellow: rgb(225, 235, 51);
+}
+
+body {
+  margin: 0;
+}
+
+li,ul {
+  list-style: none;
+}
+
+.Sec_2 {
+  margin: 0 5%;
+  margin-bottom: 200px;
+  padding: 0 10%;
+}
+
+.Sec_2 .sec2__nameList {
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: bolder;
+  color : rgb( 33,15,127);
+  background-color: aliceblue;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+.clicked{
+  color : rgb(180,128,204);
+}
+
+.Sec_2 .sec2__nameList li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color : rgb(180,128,204);
+}
+
+.hidden {
+  display: none;
+}
+
+/* .Sec_2 .project_list ul {
+  padding: 10px 20px;
+  background-color: rgb(228, 231, 188);
+} */
+
+/* .chat {
+  display: flex;
+  margin: 32px 0;
+  height: auto;
+} */
+
+/* .avatar_image {
+  margin: 5px;
+  border-radius: 50%;
+  height: var(--chat-height);
+} */
+
+/* .basic_chatting {
+  display: flex;
+  padding: 15px 18px;
+  background-color: white;
+  border-radius: 40px;
+  align-items: center;
+  max-width: 50%;
+} */
+
+/* #reply {
+  justify-content: flex-end;
+  height: auto;
+} */
+
+/* .chat_project {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  padding: 24px 32px;
+  border-radius: 40px;
+} */
+
+
+/* 채팅창 배경 */
+.chatting {
+  background-color: var(--color-skyblue);
+}
+
+/* 채팅창 날짜 */
+.chatDate {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.chatDate::before,
+.chatDate::after {
+  content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 0.5px;
+	margin: 0px 16px;
+}
+
+/* 채팅 시작 */
+.chatting .project_list {
+  margin: 0px 20px;
+}
+
+/* 말풍선 공통 스타일 */
+.chat_qu_col, .chat_an_col {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chat__clock {
+  align-self: flex-end;
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+/* 질문자 채팅 말풍선 */
+.chat_qu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 32px 0;
+}
+
+.avatar_image {
+  margin: 5px;
+  border-radius: 50%;
+  height: var(--chat-height);
+}
+
+.chat__name {
+  margin-left: 22px;
+}
+
+.chat_qu_col .chat__main {
+  padding: 15px 18px;
+  background-color: white;
+  position:relative;
+  margin: 5px 5px 5px 20px;  
+  border-radius: 10px;
+}
+
+.chat_qu_col .chat__main::after {
+  content:"";
+  border-top: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
+
+/* 우리의 채팅 말풍선 */
+.chat_an {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+
+.chat_an_col .chat__main {
+  padding: 15px 18px;
+  background-color: var(--color-yellow);
+  position:relative;
+  margin: 5px 20px 5px 5px;  
+  border-radius: 10px;
+}
+
+.chat_an_col .chat__main::before {
+  content:"";
+  border-top: 15px solid var(--color-yellow);
+  border-left: 0px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  top: 10px;
+  right: -15px;
+}

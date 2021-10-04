@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>21SV_Project</title>
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <nav class="Top_Menu">
+        <div class="Top__logo">
+            <a href="index.html">
+                <img src="./image/검정색로고.png" alt="검정로고" /></a>
+        </div>
+        <div class="Top__sections">
+            <ul class="sectionList">
+                <li class="secIntro"><span>program</span></li>
+                <li class="section1"><span>work</span></li>
+                <li class="section2"><span>team</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-contact">
+            <!-- 인트로 -->
+            <section id="Intro">
+                <div class="Intro">
+                    <!-- 애니메이션 활용 -->
+                    <div class="typer" id="ftyper">
+                        <div id="dynamic" class="main_text"></div>
+                        <div class="sub_text">HTML CSS JS학습과 개인 포트폴리오 웹사이트 구현</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 활동내용 세션 -->
+            <section class="sec_1">
+                <div class="sec1_text">
+                    <h1 data-aos="fade-up" data-aos-duration="600">우리의 활동 내역</h1>
+                    <h2 data-aos="fade-up" data-aos-duration="800">개별 학습과 팀활동</h2>
+                    <div class="Skill_content">
+                        <div class="Skill_image_container html_icon" data-aos="fade-left" data-aos-duration="600">
+                            <i class=" fab fa-html5 fa-7x"></i>
+                        </div>
+                        <div class="Skill_image_container css_icon" data-aos="fade-left" data-aos-duration="800">
+                            <i class="fab fa-css3-alt fa-7x"></i>
+                        </div>
+                        <div class="Skill_image_container js_icon" data-aos="fade-left" data-aos-duration="1000">
+                            <i class="fab fa-js-square fa-7x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 data-aos="fade-up" data-aos-duration="600">commit</h3>
+                <div class="github_image" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="mySlides fade">
+                        <img src="./image/chanu_commit.png">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./image/sejun_commit.png">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./image/hyerin_commit.png">
+
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <h3 data-aos="fade-up" data-aos-duration="600">clonecoding</h3>
+
+                <div class="clonecoding" id="clonecoding" data-aos="zoom-in" data-aos-duration="800">
+
+                    <div class="nomad">
+
+                        <div class="FP">
+                            <img src="./image/nomadCoders.PNG" alt="nomad">
+                        </div>
+                        <div class="clone_result">
+                            <img src="./image/nomad.gif" alt="paingjs" loop="infinite">
+                        </div>
+
+                    </div>
+
+                    <div class="elie">
+
+                        <div class="FP">
+                            <img src="./image/dreamcoding_elie.png" alt="elie">
+                        </div>
+                        <div class="clone_result">
+                            <img src="./image/shopping.gif" alt="shopping" loop="infinite">
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- 개별 프로젝트 세션 -->
+            <section class="sec_2">
+                <div class="Sec_2">
+                    <div class="Sec2_header">
+                        <h2 class="sec2title" data-aos="fade-up" data-aos-duration="600">
+                            우리들이 뭘 했는지 궁금하니?
+                        </h2>
+                        <p class="Sec2_sub">
+                        <h3 class="sec3sub" data-aos="fade-up" data-aos-duration="800">
+                            그렇다면 알려주지
+                        </h3>
+                        </p>
+                        <ul class="sec2__nameList" data-aos="fade-up" data-aos-duration="1000">
+                            <li class="project_Shin clicked">신찬우</li>
+                            <li class="project_Lee">이세준</li>
+                            <li class="project_Choi">최혜린</li>
+                        </ul>
+                    </div>
+                    <!-- 채팅 내용 시작 -->
+                    <div class="chatting" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic"
+                        data-aos-once="true">
+                        <!-- 채팅 날짜 -->
+                        <div class="chatDate"></div>
+
+                        <!-- 신찬우 채팅 내용 -->
+                        <div class="project_list" id="project_Shin">
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <img class="avatar_image" src="image/image_people.jpeg">
+                                <div class="chat_qu_col">
+                                    <span class="chat__name">궁금한게 많은 행인</span>
+                                    <div class="chat__main">너는 어떤 부분을 맡았니?</div>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">나는 웹 페이지의 상단바를 만드는 작업과</span>
+                                </div>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">현재 네가 보고있는 채팅창을 구현하는 작업을 했어</span>
+                                </div>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main"><img src="/image/chan_part.PNG"
+                                            class="chat_project"></span>
+                                </div>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">그리고 개인 프로젝트도 구경할래?</span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <img class="avatar_image" src="image/image_people.jpeg">
+                                <div class="chat_qu_col">
+                                    <span class="chat__name">궁금한게 많은 행인</span>
+                                    <span class="chat__main">보여줘!!</span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        나의 개인 프로젝트는 이거야!
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        <a href="https://shinchanu.github.io/">
+                                            <img src="./image/chan_projectimg.PNG" alt="chan_projectimage"
+                                                class="chat_project">
+                                        </a>
+                                    </span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                        </div>
+
+                        <!-- 이세준 채팅 내용 -->
+                        <div class="project_list" id="project_Lee" style="display: none;">
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <img class="avatar_image" src="image/image_people.jpeg">
+                                <div class="chat_qu_col">
+                                    <span class="chat__name">궁금한게 많은 행인</span>
+                                    <div class="chat__main">너는 어떤 부분을 맡았니?</div>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">나는 전체 틀을 구성하고</span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">우리의 활동 내역 중 개별 학습을 담당했어</span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        <img src="./image/sejun_part.png" alt="sejun_part" class="chat_project">
+                                    </span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        그리고 개인 프로젝트도 구경할래?
+                                    </span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <img class="avatar_image" src="image/image_people.jpeg">
+                                <div class="chat_qu_col">
+                                    <span class="chat__name">궁금한게 많은 행인</span>
+                                    <div class="chat__main">보여줘!!</div>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+
+
+
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        나의 개인 프로젝트는 이거야!
+                                    </span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+
+
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        <a href="https://yimkeul.github.io/">
+                                            <img src="./image/sejun_projectimg.png" alt="sejun_projectimage"
+                                                class="chat_project" />
+                                        </a>
+
+                                    </span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+
+                        </div>
+
+                        <!-- 최혜린 채팅 내용 -->
+                        <div class="project_list" id="project_Choi" style="display: none;">
+
+                            <div class="chat_qu" data-aos="zoom-in-right" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <img class="avatar_image" src="image/image_people.jpeg">
+                                <div class="chat_qu_col">
+                                    <span class="chat__name">궁금한게 많은 행인</span>
+                                    <div class="chat__main">너는 어떤 프로젝트를 했니?</div>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                            <div class="chat_an" data-aos="zoom-in-left" data-aos-duration="600"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="chat_an_col">
+                                    <span class="chat__main">
+                                        <p>나의 개인 프로젝트는 이거야!</p>
+                                        <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
+                                            <img src="image/choi_project.png" alt="choi_projectimage"
+                                                class="chat_project" />
+                                        </a>
+
+                                    </span>
+                                </div>
+                                <span class="chat__clock"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="ff">
+            <div class="logo">
+                <img src="./image/검정색로고.png" alt="검정로고" />
+            </div>
+            <div class="link">
+
+                <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study"
+                    style="text-decoration: none; color: black;">
+                    <i class="fab fa-github fa-3x" alt="git"></i>
+                </a>
+
+                <a href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7"
+                    style="color: rgb(3, 199, 90);">
+                    <i class="fab fa-blogger fa-3x" alt="naver_blog"></i>
+                </a>
+
+            </div>
+            <div class="text">
+
+                <b>© 21SV. 2021 All rights reserved</b>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/section2.js"></script>
+    <script src="./js/commit.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
